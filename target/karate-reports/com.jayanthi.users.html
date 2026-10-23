@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d9cab001-ecdc-41b3-a319-efa5a86d933c",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.jayanthi.users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-10-15 07:03:40 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Get user from JSONPlaceholder</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:10]"><span>[2:10]</span> <span>Get users list from ReqRes</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:19]"><span>[3:19]</span> <span>Way 1 - Direct URL (Simplest)</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:29]"><span>[4:29]</span> <span>Way 2 - Filter from List (jsonPath)</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/jayanthi/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">My First Karate Test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Get user from JSONPlaceholder</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>588</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/users/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">584</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">19:03:38.527 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users/1
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:03:39.107 response time in milliseconds: 578
+1 &lt; 200
+1 &lt; Date: Thu, 15 Oct 2026 13:33:38 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; Cache-Control: max-age=43200
+1 &lt; etag: W/&quot;1fd-+2Y3G3w049iSZtw5t1mzSnunngE&quot;
+1 &lt; expires: -1
+1 &lt; pragma: no-cache
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 3600000
+1 &lt; x-ratelimit-remaining: 3599999
+1 &lt; x-ratelimit-reset: 1790812826
+1 &lt; Age: 24619
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: HIT
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;HIT&quot;
+1 &lt; Server-Timing: cfEdge;dur=11,cfOrigin;dur=0
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=Oib6GZ7t82yNV2wHHmNwnXRtArMmvXNeUlVhs55VSihetrMSm4wHuL9R%2Bq8jQqLHmRKP0q%2B0sMrNEQoSYUANF1wrSuJm9rT4noves4hqh%2Bnnl5kZcfsJmo3CuErKdy2pprnDx8PyfWlZxyA%2BO%2BB2&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a4af325dac6e8e67-CDG
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Leanne Graham&quot;,
+  &quot;username&quot;: &quot;Bret&quot;,
+  &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;Kulas Light&quot;,
+    &quot;suite&quot;: &quot;Apt. 556&quot;,
+    &quot;city&quot;: &quot;Gwenborough&quot;,
+    &quot;zipcode&quot;: &quot;92998-3874&quot;,
+    &quot;geo&quot;: {
+      &quot;lat&quot;: &quot;-37.3159&quot;,
+      &quot;lng&quot;: &quot;81.1496&quot;
+    }
+  },
+  &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+  &quot;website&quot;: &quot;hildegard.org&quot;,
+  &quot;company&quot;: {
+    &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+    &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+    &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">19:03:39.111 [print] {
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Leanne Graham&quot;,
+  &quot;username&quot;: &quot;Bret&quot;,
+  &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+  &quot;address&quot;: {
+    &quot;street&quot;: &quot;Kulas Light&quot;,
+    &quot;suite&quot;: &quot;Apt. 556&quot;,
+    &quot;city&quot;: &quot;Gwenborough&quot;,
+    &quot;zipcode&quot;: &quot;92998-3874&quot;,
+    &quot;geo&quot;: {
+      &quot;lat&quot;: &quot;-37.3159&quot;,
+      &quot;lng&quot;: &quot;81.1496&quot;
+    }
+  },
+  &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+  &quot;website&quot;: &quot;hildegard.org&quot;,
+  &quot;company&quot;: {
+    &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+    &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+    &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Name is:&#39;, response.name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:03:39.113 [print] Name is: Leanne Graham 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:10]</span>
+                <span class="scenario-name">Get users list from ReqRes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>307</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/users?page=2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">289</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">19:03:39.133 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:03:39.418 response time in milliseconds: 284
+1 &lt; 429
+1 &lt; Date: Thu, 15 Oct 2026 13:33:39 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 796
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: cross-origin
+1 &lt; Etag: W/&quot;31c-T+A2OAZoTHpNmPBnCcSFshhoZ3U&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=m4oOZZkrUQAVfp4kBF8X0Tobr8tyccUh1GdhPqBQU1M%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1792071219&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=m4oOZZkrUQAVfp4kBF8X0Tobr8tyccUh1GdhPqBQU1M%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1792071219&quot;
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 40
+1 &lt; X-Ratelimit-Remaining: 0
+1 &lt; X-Ratelimit-Reset: 1792108800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Tip: Generate a complete backend from a description - app.reqres.in/dashboard
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 2ee047b8-7ebd-f5ea-0abd-74d370e93a7c
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Upgrade-Url: https://app.reqres.in/sign-up?source=demo_rate_limit
+1 &lt; X-Xss-Protection: 0
+1 &lt; cf-cache-status: BYPASS
+1 &lt; CF-RAY: a4af325eff45347a-HYD
+{&quot;error&quot;:&quot;rate_limit_exceeded&quot;,&quot;message&quot;:&quot;You&#39;ve hit the anonymous demo limit of 40 requests/day from this IP.&quot;,&quot;signup&quot;:{&quot;message&quot;:&quot;Create a free account for a higher daily limit, your own API key, persistent collections, and auth.&quot;,&quot;url&quot;:&quot;https://app.reqres.in/sign-up?source=demo_rate_limit&quot;},&quot;limit&quot;:40,&quot;remaining&quot;:0,&quot;reset_at&quot;:1792108800,&quot;resets_in&quot;:&quot;10h 26m&quot;,&quot;reset_explanation&quot;:&quot;Limits reset daily at midnight UTC&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Upgrade&quot;,&quot;url&quot;:&quot;https://app.reqres.in/upgrade&quot;},&quot;context&quot;:&quot;rate_limited&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">19:03:39.436 classpath:com/jayanthi/users.feature:14
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 284, url: https://reqres.in/api/users?page=2, response: 
+{&quot;error&quot;:&quot;rate_limit_exceeded&quot;,&quot;message&quot;:&quot;You&#39;ve hit the anonymous demo limit of 40 requests/day from this IP.&quot;,&quot;signup&quot;:{&quot;message&quot;:&quot;Create a free account for a higher daily limit, your own API key, persistent collections, and auth.&quot;,&quot;url&quot;:&quot;https://app.reqres.in/sign-up?source=demo_rate_limit&quot;},&quot;limit&quot;:40,&quot;remaining&quot;:0,&quot;reset_at&quot;:1792108800,&quot;resets_in&quot;:&quot;10h 26m&quot;,&quot;reset_explanation&quot;:&quot;Limits reset daily at midnight UTC&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Upgrade&quot;,&quot;url&quot;:&quot;https://app.reqres.in/upgrade&quot;},&quot;context&quot;:&quot;rate_limited&quot;}}
+classpath:com/jayanthi/users.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Total users:&#39;, response.total</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:19]</span>
+                <span class="scenario-name">Way 1 - Direct URL (Simplest)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>473</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/users/7&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">471</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">19:03:39.457 request:
+1 &gt; GET https://reqres.in/api/users/7
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:03:39.923 response time in milliseconds: 465
+1 &lt; 429
+1 &lt; Date: Thu, 15 Oct 2026 13:33:39 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 796
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: cross-origin
+1 &lt; Etag: W/&quot;31c-T+A2OAZoTHpNmPBnCcSFshhoZ3U&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=m4oOZZkrUQAVfp4kBF8X0Tobr8tyccUh1GdhPqBQU1M%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1792071219&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=m4oOZZkrUQAVfp4kBF8X0Tobr8tyccUh1GdhPqBQU1M%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1792071219&quot;
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 40
+1 &lt; X-Ratelimit-Remaining: 0
+1 &lt; X-Ratelimit-Reset: 1792108800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Tip: Generate a complete backend from a description - app.reqres.in/dashboard
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: b7e3cb9b-50de-990e-8b1a-0a86cde9dec4
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Upgrade-Url: https://app.reqres.in/sign-up?source=demo_rate_limit
+1 &lt; X-Xss-Protection: 0
+1 &lt; cf-cache-status: BYPASS
+1 &lt; CF-RAY: a4af3260faba21ba-HYD
+{&quot;error&quot;:&quot;rate_limit_exceeded&quot;,&quot;message&quot;:&quot;You&#39;ve hit the anonymous demo limit of 40 requests/day from this IP.&quot;,&quot;signup&quot;:{&quot;message&quot;:&quot;Create a free account for a higher daily limit, your own API key, persistent collections, and auth.&quot;,&quot;url&quot;:&quot;https://app.reqres.in/sign-up?source=demo_rate_limit&quot;},&quot;limit&quot;:40,&quot;remaining&quot;:0,&quot;reset_at&quot;:1792108800,&quot;resets_in&quot;:&quot;10h 26m&quot;,&quot;reset_explanation&quot;:&quot;Limits reset daily at midnight UTC&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Upgrade&quot;,&quot;url&quot;:&quot;https://app.reqres.in/upgrade&quot;},&quot;context&quot;:&quot;rate_limited&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">19:03:39.924 classpath:com/jayanthi/users.feature:23
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 465, url: https://reqres.in/api/users/7, response: 
+{&quot;error&quot;:&quot;rate_limit_exceeded&quot;,&quot;message&quot;:&quot;You&#39;ve hit the anonymous demo limit of 40 requests/day from this IP.&quot;,&quot;signup&quot;:{&quot;message&quot;:&quot;Create a free account for a higher daily limit, your own API key, persistent collections, and auth.&quot;,&quot;url&quot;:&quot;https://app.reqres.in/sign-up?source=demo_rate_limit&quot;},&quot;limit&quot;:40,&quot;remaining&quot;:0,&quot;reset_at&quot;:1792108800,&quot;resets_in&quot;:&quot;10h 26m&quot;,&quot;reset_explanation&quot;:&quot;Limits reset daily at midnight UTC&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Upgrade&quot;,&quot;url&quot;:&quot;https://app.reqres.in/upgrade&quot;},&quot;context&quot;:&quot;rate_limited&quot;}}
+classpath:com/jayanthi/users.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Email:&#39;, response.data.email</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Name:&#39;, response.data.first_name</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data.id == 7</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:29]</span>
+                <span class="scenario-name">Way 2 - Filter from List (jsonPath)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>296</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/users?page=2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">295</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">19:03:39.940 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:03:40.231 response time in milliseconds: 290
+1 &lt; 429
+1 &lt; Date: Thu, 15 Oct 2026 13:33:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 796
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: cross-origin
+1 &lt; Etag: W/&quot;31c-T+A2OAZoTHpNmPBnCcSFshhoZ3U&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=m4oOZZkrUQAVfp4kBF8X0Tobr8tyccUh1GdhPqBQU1M%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1792071219&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=m4oOZZkrUQAVfp4kBF8X0Tobr8tyccUh1GdhPqBQU1M%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1792071219&quot;
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 40
+1 &lt; X-Ratelimit-Remaining: 0
+1 &lt; X-Ratelimit-Reset: 1792108800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Tip: Need more than /api/users? Build custom collections - app.reqres.in/dashboard
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: bd6153fc-1eb2-5fb2-b942-f1d959ef5b57
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Upgrade-Url: https://app.reqres.in/sign-up?source=demo_rate_limit
+1 &lt; X-Xss-Protection: 0
+1 &lt; cf-cache-status: BYPASS
+1 &lt; CF-RAY: a4af32640cc65d35-HYD
+{&quot;error&quot;:&quot;rate_limit_exceeded&quot;,&quot;message&quot;:&quot;You&#39;ve hit the anonymous demo limit of 40 requests/day from this IP.&quot;,&quot;signup&quot;:{&quot;message&quot;:&quot;Create a free account for a higher daily limit, your own API key, persistent collections, and auth.&quot;,&quot;url&quot;:&quot;https://app.reqres.in/sign-up?source=demo_rate_limit&quot;},&quot;limit&quot;:40,&quot;remaining&quot;:0,&quot;reset_at&quot;:1792108800,&quot;resets_in&quot;:&quot;10h 26m&quot;,&quot;reset_explanation&quot;:&quot;Limits reset daily at midnight UTC&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Upgrade&quot;,&quot;url&quot;:&quot;https://app.reqres.in/upgrade&quot;},&quot;context&quot;:&quot;rate_limited&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">19:03:40.233 classpath:com/jayanthi/users.feature:33
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 290, url: https://reqres.in/api/users?page=2, response: 
+{&quot;error&quot;:&quot;rate_limit_exceeded&quot;,&quot;message&quot;:&quot;You&#39;ve hit the anonymous demo limit of 40 requests/day from this IP.&quot;,&quot;signup&quot;:{&quot;message&quot;:&quot;Create a free account for a higher daily limit, your own API key, persistent collections, and auth.&quot;,&quot;url&quot;:&quot;https://app.reqres.in/sign-up?source=demo_rate_limit&quot;},&quot;limit&quot;:40,&quot;remaining&quot;:0,&quot;reset_at&quot;:1792108800,&quot;resets_in&quot;:&quot;10h 26m&quot;,&quot;reset_explanation&quot;:&quot;Limits reset daily at midnight UTC&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Rate limited to keep ReqRes free. Projects unlock higher limits + logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;Upgrade&quot;,&quot;url&quot;:&quot;https://app.reqres.in/upgrade&quot;},&quot;context&quot;:&quot;rate_limited&quot;}}
+classpath:com/jayanthi/users.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Total in DB:&#39;, response.total</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;On this page:&#39;, response.data.length</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def specificUser = karate.jsonPath(response, &quot;$.data[?(@.id==7)]&quot;)[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Filtered user:&#39;, specificUser</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Filtered email:&#39;, specificUser.email</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match specificUser.id == 7</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

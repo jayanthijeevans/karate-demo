@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d9cab001-ecdc-41b3-a319-efa5a86d933c",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.jayanthi.testcallE2E</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-10-23 01:20:39 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span></span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/jayanthi/testcallE2E.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test call E2E</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4579</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def createResult = call read(&#39;classpath:com/jayanthi/reuseableCreateUser.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2223</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">com.jayanthi.reuseableCreateUser</div>
+      </div>
+      <div class="time-cell passed">2121</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/add&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { firstName: &#39;Jayanthi&#39;, lastName: &#39;Trainer QA&#39;, age: 49 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2021</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.9">13:20:36.063 request:
+1 &gt; POST https://dummyjson.com/users/add
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: dummyjson.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstName&quot;:&quot;Jayanthi&quot;,&quot;lastName&quot;:&quot;Trainer QA&quot;,&quot;age&quot;:49}
+
+13:20:37.179 response time in milliseconds: 1107
+1 &lt; 201
+1 &lt; Date: Fri, 23 Oct 2026 07:50:37 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 775
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; etag: W/&quot;307-vUMSjUxM1UWgDVjlHLAjb6waGHA&quot;
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 100
+1 &lt; x-ratelimit-remaining: 98
+1 &lt; x-ratelimit-reset: 1792741844
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=179
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=Nd%2BIuoKChuyE%2FZRP5BfFxIWa6Mpv73clZGICuL1A7ggqm7t2StTTdjy1032U0MRmX7Mtx5giLrdl%2BBq5EXc9bPwbINwPkMashsLhFociaYm4n5myk3pabGy1V17VZDF2&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a4ef26e15902e392-NRT
+{&quot;id&quot;:209,&quot;firstName&quot;:&quot;Jayanthi&quot;,&quot;lastName&quot;:&quot;Trainer QA&quot;,&quot;maidenName&quot;:&quot;&quot;,&quot;age&quot;:49,&quot;gender&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;phone&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;birthDate&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;bloodGroup&quot;:&quot;&quot;,&quot;height&quot;:null,&quot;weight&quot;:null,&quot;eyeColor&quot;:&quot;&quot;,&quot;hair&quot;:{&quot;color&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;},&quot;ip&quot;:&quot;&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;&quot;,&quot;city&quot;:&quot;&quot;,&quot;state&quot;:&quot;&quot;,&quot;stateCode&quot;:&quot;&quot;,&quot;postalCode&quot;:&quot;&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:null,&quot;lng&quot;:null},&quot;country&quot;:&quot;&quot;},&quot;macAddress&quot;:&quot;&quot;,&quot;university&quot;:&quot;&quot;,&quot;bank&quot;:{&quot;cardExpire&quot;:&quot;&quot;,&quot;cardNumber&quot;:&quot;&quot;,&quot;cardType&quot;:&quot;&quot;,&quot;currency&quot;:&quot;&quot;,&quot;iban&quot;:&quot;&quot;},&quot;company&quot;:{&quot;department&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;&quot;,&quot;city&quot;:&quot;&quot;,&quot;state&quot;:&quot;&quot;,&quot;stateCode&quot;:&quot;&quot;,&quot;postalCode&quot;:&quot;&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:null,&quot;lng&quot;:null},&quot;country&quot;:&quot;&quot;}},&quot;ein&quot;:&quot;&quot;,&quot;ssn&quot;:&quot;&quot;,&quot;userAgent&quot;:&quot;&quot;,&quot;crypto&quot;:{&quot;coin&quot;:&quot;&quot;,&quot;wallet&quot;:&quot;&quot;,&quot;network&quot;:&quot;&quot;},&quot;role&quot;:&quot;user&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Reusable created ID:&#39;, userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.13">13:20:37.223 [print] Reusable created ID: 209 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def realId = 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;, realId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">807</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">13:20:37.244 request:
+1 &gt; GET https://dummyjson.com/users/1
+1 &gt; Host: dummyjson.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:20:38.043 response time in milliseconds: 794
+1 &lt; 200
+1 &lt; Date: Fri, 23 Oct 2026 07:50:38 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=7s1A9Hr4fkXUOJw7XSSoTqq%2FW5A91aF9O6nabScOGYEEfp%2Fa3ydv%2Fcbl8x%2B3hRJ9qCabwzGAgU79HReiIhOEaekyWy8RY8lMtgH5Bqt3Wp2ho8UXcHOh7cFUNtdh%2Fp1x&quot;}]}
+1 &lt; etag: W/&quot;58f-CoL/KoXlW3x1PtqQr3wqPsXj6DE&quot;
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 100
+1 &lt; x-ratelimit-remaining: 95
+1 &lt; x-ratelimit-reset: 1792741844
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=10,cfOrigin;dur=81
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a4ef26e71c1f6f30-CDG
+{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Emily&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;maidenName&quot;:&quot;Smith&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;emily.johnson@x.dummyjson.com&quot;,&quot;phone&quot;:&quot;+81 965-431-3024&quot;,&quot;username&quot;:&quot;emilys&quot;,&quot;password&quot;:&quot;emilyspass&quot;,&quot;birthDate&quot;:&quot;1996-5-30&quot;,&quot;image&quot;:&quot;https://dummyjson.com/icon/emilys/128&quot;,&quot;bloodGroup&quot;:&quot;O-&quot;,&quot;height&quot;:193.24,&quot;weight&quot;:63.16,&quot;eyeColor&quot;:&quot;Green&quot;,&quot;hair&quot;:{&quot;color&quot;:&quot;Brown&quot;,&quot;type&quot;:&quot;Curly&quot;},&quot;ip&quot;:&quot;42.48.100.32&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;626 Main Street&quot;,&quot;city&quot;:&quot;Phoenix&quot;,&quot;state&quot;:&quot;Mississippi&quot;,&quot;stateCode&quot;:&quot;MS&quot;,&quot;postalCode&quot;:&quot;29112&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:-77.16213,&quot;lng&quot;:-92.084824},&quot;country&quot;:&quot;United States&quot;},&quot;macAddress&quot;:&quot;47:fa:41:18:ec:eb&quot;,&quot;university&quot;:&quot;University of Wisconsin--Madison&quot;,&quot;bank&quot;:{&quot;cardExpire&quot;:&quot;05/28&quot;,&quot;cardNumber&quot;:&quot;3693233511855044&quot;,&quot;cardType&quot;:&quot;Diners Club International&quot;,&quot;currency&quot;:&quot;GBP&quot;,&quot;iban&quot;:&quot;GB74MH2UZLR9TRPHYNU8F8&quot;},&quot;company&quot;:{&quot;department&quot;:&quot;Engineering&quot;,&quot;name&quot;:&quot;Dooley, Kozey and Cronin&quot;,&quot;title&quot;:&quot;Sales Manager&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;263 Tenth Street&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;state&quot;:&quot;Wisconsin&quot;,&quot;stateCode&quot;:&quot;WI&quot;,&quot;postalCode&quot;:&quot;37657&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:71.814525,&quot;lng&quot;:-161.150263},&quot;country&quot;:&quot;United States&quot;}},&quot;ein&quot;:&quot;977-175&quot;,&quot;ssn&quot;:&quot;900-590-289&quot;,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36&quot;,&quot;crypto&quot;:{&quot;coin&quot;:&quot;Bitcoin&quot;,&quot;wallet&quot;:&quot;0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a&quot;,&quot;network&quot;:&quot;Ethereum (ERC20)&quot;},&quot;role&quot;:&quot;admin&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;, realId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { firstName: &#39;JayanthiJ&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">773</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">13:20:38.059 request:
+2 &gt; PUT https://dummyjson.com/users/1
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 25
+2 &gt; Host: dummyjson.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstName&quot;:&quot;JayanthiJ&quot;}
+
+13:20:38.825 response time in milliseconds: 765
+2 &lt; 200
+2 &lt; Date: Fri, 23 Oct 2026 07:50:38 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; access-control-allow-credentials: true
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=SYrruwNLLa44efKGWqg3X7dtxhsA87m3Gaf2e79GPyJMjXZDZK%2FkccGO0JvR%2F3nmVxPbY50a5lrNIPMDuMKKU%2FBQtfTxYYvvAqIWBOxqiAVzL9IVNOo9EZmTU5Oj7WhY&quot;}]}
+2 &lt; etag: W/&quot;593-6+zJJaTU8W8QOfcMO44hk51SYnw&quot;
+2 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+2 &lt; vary: Origin, Accept-Encoding
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-dns-prefetch-control: off
+2 &lt; x-download-options: noopen
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; x-ratelimit-limit: 100
+2 &lt; x-ratelimit-remaining: 94
+2 &lt; x-ratelimit-reset: 1792741844
+2 &lt; x-xss-protection: 1; mode=block
+2 &lt; cf-cache-status: DYNAMIC
+2 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+2 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+2 &lt; Server-Timing: cfEdge;dur=6,cfOrigin;dur=85
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: a4ef26ec2cce7841-CDG
+{&quot;id&quot;:1,&quot;firstName&quot;:&quot;JayanthiJ&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;maidenName&quot;:&quot;Smith&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;emily.johnson@x.dummyjson.com&quot;,&quot;phone&quot;:&quot;+81 965-431-3024&quot;,&quot;username&quot;:&quot;emilys&quot;,&quot;password&quot;:&quot;emilyspass&quot;,&quot;birthDate&quot;:&quot;1996-5-30&quot;,&quot;image&quot;:&quot;https://dummyjson.com/icon/emilys/128&quot;,&quot;bloodGroup&quot;:&quot;O-&quot;,&quot;height&quot;:193.24,&quot;weight&quot;:63.16,&quot;eyeColor&quot;:&quot;Green&quot;,&quot;hair&quot;:{&quot;color&quot;:&quot;Brown&quot;,&quot;type&quot;:&quot;Curly&quot;},&quot;ip&quot;:&quot;42.48.100.32&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;626 Main Street&quot;,&quot;city&quot;:&quot;Phoenix&quot;,&quot;state&quot;:&quot;Mississippi&quot;,&quot;stateCode&quot;:&quot;MS&quot;,&quot;postalCode&quot;:&quot;29112&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:-77.16213,&quot;lng&quot;:-92.084824},&quot;country&quot;:&quot;United States&quot;},&quot;macAddress&quot;:&quot;47:fa:41:18:ec:eb&quot;,&quot;university&quot;:&quot;University of Wisconsin--Madison&quot;,&quot;bank&quot;:{&quot;cardExpire&quot;:&quot;05/28&quot;,&quot;cardNumber&quot;:&quot;3693233511855044&quot;,&quot;cardType&quot;:&quot;Diners Club International&quot;,&quot;currency&quot;:&quot;GBP&quot;,&quot;iban&quot;:&quot;GB74MH2UZLR9TRPHYNU8F8&quot;},&quot;company&quot;:{&quot;department&quot;:&quot;Engineering&quot;,&quot;name&quot;:&quot;Dooley, Kozey and Cronin&quot;,&quot;title&quot;:&quot;Sales Manager&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;263 Tenth Street&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;state&quot;:&quot;Wisconsin&quot;,&quot;stateCode&quot;:&quot;WI&quot;,&quot;postalCode&quot;:&quot;37657&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:71.814525,&quot;lng&quot;:-161.150263},&quot;country&quot;:&quot;United States&quot;}},&quot;ein&quot;:&quot;977-175&quot;,&quot;ssn&quot;:&quot;900-590-289&quot;,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36&quot;,&quot;crypto&quot;:{&quot;coin&quot;:&quot;Bitcoin&quot;,&quot;wallet&quot;:&quot;0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a&quot;,&quot;network&quot;:&quot;Ethereum (ERC20)&quot;},&quot;role&quot;:&quot;admin&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;, realId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">754</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">13:20:38.829 request:
+3 &gt; DELETE https://dummyjson.com/users/1
+3 &gt; Host: dummyjson.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+13:20:39.575 response time in milliseconds: 739
+3 &lt; 200
+3 &lt; Date: Fri, 23 Oct 2026 07:50:39 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; access-control-allow-credentials: true
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=bigGO67WvGhTaDDEIC7pgFyGa%2Fblj1iM7kkjqbvPZv%2Fl7xLe0PNa%2B%2Bp8piPGHQDhUNOTnXE%2FvV%2BwDL5L8fZLCe%2B9gMvspoBeDnkqs1fJKipLnAqQkcS%2F2frgQXftUQua&quot;}]}
+3 &lt; etag: W/&quot;5c7-G+S4PkBUUIrcvoQzowRqr2tWw6Q&quot;
+3 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+3 &lt; vary: Origin, Accept-Encoding
+3 &lt; x-content-type-options: nosniff
+3 &lt; x-dns-prefetch-control: off
+3 &lt; x-download-options: noopen
+3 &lt; x-frame-options: SAMEORIGIN
+3 &lt; x-ratelimit-limit: 100
+3 &lt; x-ratelimit-remaining: 92
+3 &lt; x-ratelimit-reset: 1792741844
+3 &lt; x-xss-protection: 1; mode=block
+3 &lt; cf-cache-status: DYNAMIC
+3 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+3 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+3 &lt; Server-Timing: cfEdge;dur=9,cfOrigin;dur=81
+3 &lt; Server: cloudflare
+3 &lt; CF-RAY: a4ef26f0c990d475-CDG
+{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Emily&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;maidenName&quot;:&quot;Smith&quot;,&quot;age&quot;:29,&quot;gender&quot;:&quot;female&quot;,&quot;email&quot;:&quot;emily.johnson@x.dummyjson.com&quot;,&quot;phone&quot;:&quot;+81 965-431-3024&quot;,&quot;username&quot;:&quot;emilys&quot;,&quot;password&quot;:&quot;emilyspass&quot;,&quot;birthDate&quot;:&quot;1996-5-30&quot;,&quot;image&quot;:&quot;https://dummyjson.com/icon/emilys/128&quot;,&quot;bloodGroup&quot;:&quot;O-&quot;,&quot;height&quot;:193.24,&quot;weight&quot;:63.16,&quot;eyeColor&quot;:&quot;Green&quot;,&quot;hair&quot;:{&quot;color&quot;:&quot;Brown&quot;,&quot;type&quot;:&quot;Curly&quot;},&quot;ip&quot;:&quot;42.48.100.32&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;626 Main Street&quot;,&quot;city&quot;:&quot;Phoenix&quot;,&quot;state&quot;:&quot;Mississippi&quot;,&quot;stateCode&quot;:&quot;MS&quot;,&quot;postalCode&quot;:&quot;29112&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:-77.16213,&quot;lng&quot;:-92.084824},&quot;country&quot;:&quot;United States&quot;},&quot;macAddress&quot;:&quot;47:fa:41:18:ec:eb&quot;,&quot;university&quot;:&quot;University of Wisconsin--Madison&quot;,&quot;bank&quot;:{&quot;cardExpire&quot;:&quot;05/28&quot;,&quot;cardNumber&quot;:&quot;3693233511855044&quot;,&quot;cardType&quot;:&quot;Diners Club International&quot;,&quot;currency&quot;:&quot;GBP&quot;,&quot;iban&quot;:&quot;GB74MH2UZLR9TRPHYNU8F8&quot;},&quot;company&quot;:{&quot;department&quot;:&quot;Engineering&quot;,&quot;name&quot;:&quot;Dooley, Kozey and Cronin&quot;,&quot;title&quot;:&quot;Sales Manager&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;263 Tenth Street&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;state&quot;:&quot;Wisconsin&quot;,&quot;stateCode&quot;:&quot;WI&quot;,&quot;postalCode&quot;:&quot;37657&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:71.814525,&quot;lng&quot;:-161.150263},&quot;country&quot;:&quot;United States&quot;}},&quot;ein&quot;:&quot;977-175&quot;,&quot;ssn&quot;:&quot;900-590-289&quot;,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36&quot;,&quot;crypto&quot;:{&quot;coin&quot;:&quot;Bitcoin&quot;,&quot;wallet&quot;:&quot;0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a&quot;,&quot;network&quot;:&quot;Ethereum (ERC20)&quot;},&quot;role&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:true,&quot;deletedOn&quot;:&quot;2026-10-23T07:50:39.534Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
